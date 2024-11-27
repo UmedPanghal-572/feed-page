@@ -20,10 +20,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
 
 </head>
 
-<body class="poppins-font">
+<body class="poppins-font ">
     <header class="header ">
         <div class="container">
             <nav class="navbar navbar-expand-lg d-flex">
@@ -60,8 +61,8 @@
                                 href="./index.html" target="_blank">Feed</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link wallet-active fw-normal fs-md p-0 text-black opacity-50" href="./wallet.html"
-                                target="_blank">Wallet</a>
+                            <a class="nav-link wallet-active fw-normal fs-md p-0 text-black opacity-50"
+                                href="./wallet.html" target="_blank">Wallet</a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav align-items-center gap-25 rightbar-nav">
@@ -123,6 +124,79 @@
         class="min-vh-100 bg-color-light-white d-flex align-items-center justify-content-center pt-270 pt-md-450 pt-lg-380 ">
         <div class="container">
             <div class="row row-gap-15 row-gap-lg-34 pb-5 mt-4 mt-sm-0">
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" id="closeModalBtn"><img src="./assets/image/svg.img/cross-arrow.svg"
+                                alt="cross-arrow"></span>
+                        <div class="row row-gap-3">
+                            <div class=" col-12 col-md-6">
+                                <img src="./assets/image/png.img/wallet-card-1.png" alt="" class="w-100 h-100">
+                            </div>
+                            <div class=" col-12 col-md-6">
+                                <div class="model-under-text">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center gap-2 gap-lg-4">
+                                            <div class=" d-flex gap-1 gap-lg-3">
+                                                <img src="./assets/image/svg.img/heart-svg-card-1.svg" alt="heart-svg"
+                                                    class="cursor-pointer">
+                                                <p class="fw-normal fs-md text-black mb-0">10</p>
+                                            </div>
+                                            <div class=" d-flex gap-1 gap-lg-4">
+                                                <img src="./assets/image/svg.img/cooment-box-svg.svg" alt="comment-svg"
+                                                    class="cursor-pointer">
+                                                <p class="fw-normal fs-md text-black mb-0">20</p>
+                                            </div>
+                                        </div>
+                                        <a href="#">
+                                            <img src="./assets/image/svg.img/share-icon-black.svg" alt="share-icon">
+                                        </a>
+                                    </div>
+                                    <p class="fw-normal fs-md text-black opacity-50 my-2 my-lg-4">Comments</p>
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src="./assets/image/svg.img/modal-svg-1.svg" alt="girl-pic">
+                                        </div>
+                                        <div class="modal-box mb-2 mb-lg-4 d-flex flex-column justify-content-center">
+                                            <p class="text-black fw-normal fs-md mb-1">Jhone Doe</p>
+                                            <p class="text-black fw-normal fs-md opacity-50 mb-0">Pulvinar viverra ac
+                                                mauris magna lobortis ultrices.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src="./assets/image/svg.img/modal-svg-2.svg" alt="girl-pic">
+                                        </div>
+                                        <div class="modal-box mb-2 mb-lg-4 d-flex flex-column justify-content-center">
+                                            <p class="text-black fw-normal fs-md mb-1">Jhone Doe</p>
+                                            <p class="text-black fw-normal fs-md opacity-50 mb-0">Pulvinar viverra ac
+                                                mauris magna lobortis ultrices.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src="./assets/image/svg.img/modal-svg-3.svg" alt="girl-pic">
+                                        </div>
+                                        <div class="modal-box mb-2 mb-lg-4 d-flex flex-column justify-content-center">
+                                            <p class="text-black fw-normal fs-md mb-1">Jhone Doe</p>
+                                            <p class="text-black fw-normal fs-md opacity-50 mb-0">Pulvinar viverra ac
+                                                mauris magna lobortis ultrices.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src="./assets/image/svg.img/modal-svg-4.svg" alt="girl-pic">
+                                        </div>
+                                        <div class="modal-box  d-flex flex-column justify-content-center">
+                                            <p class="text-black fw-normal fs-md mb-1">Jhone Doe</p>
+                                            <p class="text-black fw-normal fs-md opacity-50 mb-0">Pulvinar viverra ac
+                                                mauris magna lobortis ultrices.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-6 col-md-4 col-lg-3">
                     <div class="wallet-card-img">
                         <img src="./assets/image/png.img/wallet-card-1.png" alt="card-image" class="w-100">
@@ -135,7 +209,7 @@
                                 </div>
                                 <div class=" d-flex gap-1 gap-lg-4">
                                     <img src="./assets/image/svg.img/wallet-comment-box-svg.svg" alt="comment-svg"
-                                        class="cursor-pointer">
+                                        class="cursor-pointer" id="openModalBtn">
                                     <p class="fw-normal fs-md text-white mb-0">20</p>
                                 </div>
                             </div>
@@ -498,7 +572,7 @@
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- link-js  -->
-   
+
     <script src="./assets/js/app.js"></script>
 
 </body>

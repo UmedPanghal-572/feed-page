@@ -5,6 +5,8 @@
     font-family: "Poppins", sans-serif;
 }
 
+
+
 .header {
     box-shadow: 0px 4px 35px 0px #00000014;
     background: var(--fc-white);
@@ -255,18 +257,25 @@ input[type="radio"]:checked {
     background-color: var(--fc-black);
     border-radius: 26px;
     padding: 8px 24px;
+    transition: all 200ms linear !important;
+
+}
+.btn-edit-profile:hover {
+    color: var(--fc-black);
+    background-color: var(--fc-white);
+    
 
 }
 
 .wallet-following {
-    border-right: 1px solid #cccccc;
+    border-right: 1px solid var(--fc-color-white-wallet);
     padding-right: 44px;
 }
 
 .wallet-line {
     width: 100%;
     height: 1px;
-    background-color: #cccccc;
+    background-color: var(--fc-color-white-wallet);
 }
 
 .bg-color-light-white {
@@ -329,6 +338,63 @@ input[type="radio"]:checked {
     z-index: 15;
 }
 
+/* wallet-modal  */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: var(--fc-white);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    max-width: 1000px;
+    position: relative;
+    top: 10%;
+}
+
+
+
+.close {
+    width: 61px;
+    height: 61px;
+    border-radius: 100px;
+    background-color: var(--fc-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    cursor: pointer;
+}
+
+.model-under-text {
+    padding: 19px 34px 26px 26px;
+    background: var(--fc-white-card);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.modal-box {
+    padding: 12px 14px;
+    background: var(--fc-white);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 0px 10px 10px 10px;
+    margin-left: 14px;
+}
 
 @media (max-width:360px) {
     .page-logo-img {
@@ -519,6 +585,17 @@ input[type="radio"]:checked {
 
     .wallet-following {
         padding-right: 35px !important;
+    }
+
+    .modal-content {
+        top: 20%;
+    }
+
+    .close {
+        width: 30px;
+        height: 30px;
+        top: -10px;
+        right: -10px;
     }
 
 }

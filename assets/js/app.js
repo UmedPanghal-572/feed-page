@@ -75,3 +75,15 @@ $(window).resize(function () {
 });
 
 
+const modal = document.getElementById("myModal");
+const openModalBtn = document.getElementById("openModalBtn");
+const closeModalBtn = document.getElementById("closeModalBtn");
+
+openModalBtn.onclick = function () {
+    modal.style.display = "flex";
+}
+
+closeModalBtn.onclick = function () {
+    modal.style.display = "none";
+}
+

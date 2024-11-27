@@ -17,6 +17,7 @@
     --fc-black-opacity: #0000001A;
     --fc-black-text-opacity: #00000099;
     --fc-black-grey: #333;
+    --fc-color-white-wallet: #cccccc;
 }
 
 .fs-sm {
@@ -46,9 +47,10 @@
 @media (max-width:360px) {
     :root {
         --fs-xl: 12px !important;
-        
+
     }
 }
+
 @media (max-width:410px) {
     :root {
         --fs-sm: 10px;
