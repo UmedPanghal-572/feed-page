@@ -127,6 +127,15 @@
 }
 
 /* common-classes  */
+/* padding  */
+
+.ps-20 {
+    padding-left: 20px;
+}
+
+.pt-270 {
+    padding-top: 270px;
+}
 
 /* margin  */
 .ms-11 {
@@ -154,6 +163,11 @@
 /* cursor-pointer  */
 .cursor-pointer {
     cursor: pointer;
+}
+
+/* line-height  */
+.lh-180 {
+    line-height: 180%;
 }
 
 /* ---------- */
@@ -210,6 +224,102 @@ input[type="radio"]:checked {
     background-color: var(--fc-white-card);
 }
 
+/* wallet-page  */
+.bg-img-wallet {
+    background-image: url(../image/png.img/wallet-page-bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-wallet {
+    background: var(--fc-white);
+    box-shadow: 0px 38px 85px -19px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 39px;
+    transform: translateY(60%);
+}
+
+.btn-edit-profile {
+    color: var(--fc-white);
+    background-color: var(--fc-black);
+    border-radius: 26px;
+    padding: 8px 24px;
+
+}
+
+.wallet-following {
+    border-right: 1px solid #cccccc;
+    padding-right: 44px;
+}
+
+.wallet-line {
+    width: 100%;
+    height: 1px;
+    background-color: #cccccc;
+}
+
+.bg-color-light-white {
+    background-color: var(--fc-white-light);
+}
+
+.wallet-card-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+
+}
+
+.more-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding-left: 26px;
+    padding-right: 21px;
+    padding-bottom: 20px;
+    z-index: 1;
+    transition: bottom 200ms linear;
+}
+
+.wallet-card-img:hover .more-menu {
+    bottom: 0;
+}
+
+.wallet-card-img::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 200ms linear;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.74%, #000000 100%);
+}
+
+.wallet-card-img:hover::after {
+    opacity: 1;
+}
+
+.play-botton {
+    width: 48px;
+    height: 48px;
+    border: 2px solid var(--fc-white);
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer !important;
+    z-index: 15;
+}
+
+
 @media (max-width:360px) {
     .page-logo-img {
         width: 27px !important;
@@ -237,6 +347,22 @@ input[type="radio"]:checked {
     .searchbtn-input {
         padding: 4px !important;
     }
+
+    /* .text-follow {
+        font-size: 10px !important;
+    } */
+}
+
+@media (max-width:400px) {
+    .wallet-following {
+        padding-right: 20px !important;
+    }
+
+    .card-wallet {
+        padding: 28px !important;
+    }
+
+
 }
 
 @media (max-width:767.98px) {
@@ -249,6 +375,22 @@ input[type="radio"]:checked {
         width: 32px;
         height: 32px;
     }
+
+    .card-wallet {
+        transform: translateY(30%) !important;
+    }
+
+    .play-botton {
+        width: 35px;
+        height: 35px;
+
+    }
+        .more-menu {
+            padding-left: 5px;
+            padding-right: 5px;
+           
+        }
+
 }
 
 @media (max-width: 991.98px) {
@@ -349,6 +491,42 @@ input[type="radio"]:checked {
         display: flex;
         gap: 8px !important;
     }
+
+    .row-gap-15 {
+        row-gap: 15px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .mt-21 {
+        margin-top: 21px;
+    }
+
+    .mb-15 {
+        margin-bottom: 15px;
+    }
+
+    .wallet-following {
+        padding-right: 35px !important;
+    }
+
+}
+
+@media (min-width:576px) {
+    .ps-sm-35 {
+        padding-left: 35px;
+    }
+
+
+}
+
+@media (min-width:768px) {
+    .pt-md-450 {
+        padding-top: 450px;
+    }
+
 }
 
 @media (min-width:992px) {
@@ -380,6 +558,18 @@ input[type="radio"]:checked {
         margin-bottom: 22px !important;
     }
 
+    .mb-lg-34 {
+        margin-bottom: 34px;
+    }
+
+    .mt-lg-52 {
+        margin-top: 52px;
+    }
+
+    .mt-lg-23 {
+        margin-top: 23px;
+    }
+
     .copyright-text {
         margin-top: 42px;
     }
@@ -394,5 +584,17 @@ input[type="radio"]:checked {
 
     .recently-received-btn {
         display: none;
+    }
+
+    .pt-lg-380 {
+        padding-top: 380px;
+    }
+
+    .row-gap-lg-34 {
+        row-gap: 34px;
+    }
+
+    .ps-lg-44 {
+        padding-left: 44px;
     }
 }
