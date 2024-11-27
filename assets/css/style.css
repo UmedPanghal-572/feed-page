@@ -98,6 +98,11 @@
     color: var(--fc-white);
 }
 
+.feed-active {
+    color: var(--fc-black) !important;
+    -webkit-text-stroke: 1px !important;
+}
+
 .searchbtn-lg-less {
     top: 50%;
     right: 2%;
@@ -225,6 +230,11 @@ input[type="radio"]:checked {
 }
 
 /* wallet-page  */
+.wallet-active {
+    color: var(--fc-black) !important;
+    -webkit-text-stroke: 1px !important;
+}
+
 .bg-img-wallet {
     background-image: url(../image/png.img/wallet-page-bg-img.png);
     background-repeat: no-repeat;
@@ -348,7 +358,7 @@ input[type="radio"]:checked {
         padding: 4px !important;
     }
 
-   
+
 }
 
 @media (max-width:400px) {
@@ -383,11 +393,12 @@ input[type="radio"]:checked {
         height: 35px;
 
     }
-        .more-menu {
-            padding-left: 5px;
-            padding-right: 5px;
-           
-        }
+
+    .more-menu {
+        padding-left: 5px;
+        padding-right: 5px;
+
+    }
 
 }
 
