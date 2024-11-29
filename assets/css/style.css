@@ -260,11 +260,10 @@ input[type="radio"]:checked {
     transition: all 200ms linear !important;
 
 }
+
 .btn-edit-profile:hover {
     color: var(--fc-black);
     background-color: var(--fc-white);
-    
-
 }
 
 .wallet-following {
@@ -424,6 +423,10 @@ input[type="radio"]:checked {
         padding: 4px !important;
     }
 
+    .comment-box-input {
+        padding: 8px 64px 8px 24px;
+
+    }
 
 }
 
